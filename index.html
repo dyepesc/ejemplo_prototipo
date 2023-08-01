@@ -3,9 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Prototipo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="rent.css">
 </head>
 <body>
-    
-</body>
+<h1 class="titulo">Alquila tu Vehículo .com</h1>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Home</a>
+          <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#"></a>
+              <a class="nav-link" href="#"></a>
+              <a class="nav-link" href="#"></a>
+              <a class="nav-link disabled" aria-disabled="true"></a>
+            </div>
+          </div> -->
+        </div>
+      </nav>
+      <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+      <!-- Formulario -->
+      <div class="row">
+        <div class="col">
+            <center><a>Ubicación recogida</a></center>
+          <input type="text" class="form-control" placeholder="" aria-label="Recogida">
+        </div>
+        <div class="col">
+            <center><a>Fecha recogida</a></center>
+          <input type="text" class="form-control" placeholder="" aria-label="Fecha recogida">
+        </div>
+        <div class="col">
+            <center><a>Fecha entrega</a></center>
+            <input type="text" class="form-control" placeholder="" aria-label="Fecha entrega">
+        </div>
+        <div class="col">
+            
+            <button class="boton">Buscar</button>
+        </div>
+      </div>
+      <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+     <!-- tarjetas -->
+     <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="./assets/smallsedanjpg.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Small Sedan</h5>
+              <p class="card-text">Ford Focus o similar</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">250 USD por semana</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="./assets/largesedan.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Large Sedan</h5>
+              <p class="card-text">Nissan Máxima o similar</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">370 USD por semana</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="./assets/SUV.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">SUV</h5>
+              <p class="card-text">Nissan Rogue o similar </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">390 USD por semana</small>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->      
+    </body>
 </html>

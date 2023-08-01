@@ -1,0 +1,30 @@
+.titulo {
+    font-family: "Lucida Handwriting", cursive;
+    margin: 20px;
+}
+.navbar {
+    height: 100px;
+}
+.row {
+    margin: 100px;
+}
+.row a {
+    font-family: "Lucida Handwriting", cursive;
+    font-size: 30px;
+}
+.boton {
+    background-color: aquamarine;
+    margin: 50px;
+    width: 100px;
+    height: 40px;
+    border-radius: 15px;
+    border-style: hidden;
+}
+.card-title {
+    font-weight: bold;
+    font-size: 30px;
+}
+.text-body-secondary {
+    font-weight: bold;
+    font-size: 30px;
+}
