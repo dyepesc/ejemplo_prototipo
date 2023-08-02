@@ -1,4 +1,5 @@
 const btnhome = document.querySelector('.navbar-brand'); //boton home (reset)
+//const btnhome1 = document.querySelector('.home1'); 
 const input1 = document.querySelector('.form-control');
 const input2 = document.querySelector('#fecha1');
 const input3 = document.querySelector('#fecha2');
@@ -13,12 +14,15 @@ const modal3 = document.querySelector('.modal3'); //ventana modal 3
 const span1 = document.querySelector('.cerrar');
 const span2 = document.querySelector('.cerrar2');
 const span3 = document.querySelector('.cerrar3');
+const btnconfirmar = document.querySelector('.botonconfirmar');
 
 
 //*********************************************************************************** */
 //Acciones de botones
 
 btnhome.addEventListener("click", limpiarFormulario);
+
+//btnhome1.addEventListener("click", inicio);
 
 btnbuscar.addEventListener("click", buscarTarjeta);
 
@@ -33,6 +37,8 @@ window.addEventListener("click", modalCerrarFuera2);
 btnreservar3.addEventListener("click", modalReservar3);
 span3.addEventListener("click", modalCerrar3);
 window.addEventListener("click", modalCerrarFuera3);
+
+btnconfirmar.addEventListener("click", ventanaPago);
 
 //*********************************************************************************** */
 //Funciones
@@ -107,5 +113,16 @@ function limpiarFormulario() {
     input2.value = " ";
     input3.value = " ";
   }
+
+  // Pagar
+
+  function ventanaPago () {
+    window.open("./pantalla2.html");
+  }
+
+  // Volver al inicio
+//   function inicio () {
+//     window.open("index.html");
+//   }
 
 //*********************************************************************************** */

@@ -14,7 +14,7 @@
     margin: 100px;
 }
 .row a {
-    font-family: "Lucida Handwriting", cursive;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 30px;
 }
 .tarjeta {
@@ -143,4 +143,23 @@ button {
   @keyframes animarsuperior {
     from {top:-300px; opacity:0}
     to {top:0; opacity:1}
+  }
+
+  /********************************************************************************/
+  /* Pantalla 2 */
+
+  h3 {
+    margin-left: 20px;
+  }
+  .was-validated {
+    margin-left: 20px;
+    margin-top: 50px;
+    
+  }
+  .botonpagar {
+    margin-top: 40px;
+  }
+  .home1 {
+    border-style: hidden;
+    background-color: rgba(var(--bs-tertiary-bg-rgb),var(--bs-bg-opacity)) !important;
   }
