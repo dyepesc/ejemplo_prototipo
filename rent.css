@@ -163,3 +163,16 @@ button {
     border-style: hidden;
     background-color: rgba(var(--bs-tertiary-bg-rgb),var(--bs-bg-opacity)) !important;
   }
+  .modal {
+    display: none;
+  }
+  .btn {
+    background-color: aquamarine;
+    margin: 10px;
+    width: 80px;
+    height: 40px;
+    border-radius: 15px;
+    border-style: hidden;
+    color:black;
+    font-weight: bold;
+  }

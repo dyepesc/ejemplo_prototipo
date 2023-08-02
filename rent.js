@@ -17,6 +17,7 @@ const span3 = document.querySelector('.cerrar3');
 const btnconfirmar = document.querySelector('.botonconfirmar');
 const btnconfirmar2 = document.querySelector('.botonconfirmar2');
 const btnconfirmar3 = document.querySelector('.botonconfirmar3');
+const btnpagar = document.querySelector('.botonpagar');
 
 
 //*********************************************************************************** */
@@ -43,6 +44,8 @@ window.addEventListener("click", modalCerrarFuera3);
 btnconfirmar.addEventListener("click", ventanaPago);
 btnconfirmar2.addEventListener("click", ventanaPago);
 btnconfirmar3.addEventListener("click", ventanaPago);
+
+btnpagar.addEventListener("click", abrirCamara);
 
 //*********************************************************************************** */
 //Funciones
@@ -129,5 +132,29 @@ function limpiarFormulario() {
 //   function inicio () {
 //     window.open("./index.html");
 //   }
+
+  // Abrir camara
+  function abrirCamara() {
+    // Obtenemos el elemento de video
+    let video = document.getElementById("video");
+    // Comprobamos si el navegador soporta la API de MediaDevices
+    if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+      // Solicitamos el stream de la cámara
+      navigator.mediaDevices.getUserMedia({ video: true })
+        .then(function(stream) {
+          // Asignamos el stream al elemento de video
+          video.srcObject = stream;
+          // Reproducimos el video
+          video.play();
+        })
+        .catch(function(error) {
+          // Si hay algún error, lo mostramos en la consola
+          console.error(error);
+        });
+    } else {
+      // Si el navegador no soporta la API, mostramos un mensaje de alerta
+      alert("Tu navegador no soporta el acceso a la cámara");
+    }
+  }
 
 //*********************************************************************************** */
