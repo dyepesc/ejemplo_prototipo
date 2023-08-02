@@ -14,7 +14,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Home</a>
+          <input type="button" class="navbar-brand" href="#" value="Home">
           <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -37,11 +37,11 @@
         </div>
         <div class="col">
             <center><a>Fecha recogida</a></center>
-          <input type="text" class="form-control" placeholder="" aria-label="Fecha recogida">
+          <input type="date" id="fecha1" class="form-control" placeholder="" aria-label="Fecha recogida"  min="2023-01-01" max="2023-12-31">
         </div>
         <div class="col">
             <center><a>Fecha entrega</a></center>
-            <input type="text" class="form-control" placeholder="" aria-label="Fecha entrega">
+            <input type="date" id="fecha2" class="form-control" placeholder="" aria-label="Fecha entrega"  min="2023-01-01" max="2023-12-31">
         </div>
         <div class="col">
             
@@ -50,6 +50,7 @@
       </div>
       <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
      <!-- tarjetas -->
+     <div class="tarjeta">
      <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
           <div class="card h-100">
@@ -91,6 +92,7 @@
           </div>
         </div>
       </div>
+    </div>
 <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->      
 <!-- Modal1     -->
 <div id="ventanaModal" class="modal1">

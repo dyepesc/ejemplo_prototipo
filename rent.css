@@ -4,6 +4,11 @@
 }
 .navbar {
     height: 100px;
+    
+}
+.navbar-brand {
+    border-style: hidden;
+    background-color: rgba(var(--bs-tertiary-bg-rgb),var(--bs-bg-opacity)) !important;
 }
 .row {
     margin: 100px;
@@ -12,6 +17,10 @@
     font-family: "Lucida Handwriting", cursive;
     font-size: 30px;
 }
+.tarjeta {
+display: none;
+}
+
 .botonbuscar {
     background-color: aquamarine;
     margin: 50px;

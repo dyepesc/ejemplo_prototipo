@@ -1,3 +1,9 @@
+const btnhome = document.querySelector('.navbar-brand'); //boton home (reset)
+const input1 = document.querySelector('.form-control');
+const input2 = document.querySelector('#fecha1');
+const input3 = document.querySelector('#fecha2');
+const btnbuscar = document.querySelector('.botonbuscar'); //boton que abre modal1
+const tarjetas = document.querySelector('.tarjeta');
 const btnreservar1 = document.querySelector('.botonreservar1'); //boton que abre modal1
 const btnreservar2 = document.querySelector('.botonreservar2');
 const btnreservar3 = document.querySelector('.botonreservar3');
@@ -11,6 +17,10 @@ const span3 = document.querySelector('.cerrar3');
 
 //*********************************************************************************** */
 //Acciones de botones
+
+btnhome.addEventListener("click", limpiarFormulario);
+
+btnbuscar.addEventListener("click", buscarTarjeta);
 
 btnreservar1.addEventListener("click", modalReservar1);
 span1.addEventListener("click", modalCerrar1);
@@ -26,6 +36,12 @@ window.addEventListener("click", modalCerrarFuera3);
 
 //*********************************************************************************** */
 //Funciones
+//tarjetas
+
+function buscarTarjeta () {
+    tarjetas.style.display = "block";
+}
+
 //Modal1
 
 function modalReservar1 () {
@@ -82,5 +98,14 @@ function modalCerrarFuera3 () {
     modal3.style.display = "none";
     }
 }
+
+// Limpia form
+
+function limpiarFormulario() {
+    location.reload();
+    input1.value = " ";
+    input2.value = " ";
+    input3.value = " ";
+  }
 
 //*********************************************************************************** */
