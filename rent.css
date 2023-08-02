@@ -20,6 +20,14 @@
     border-radius: 15px;
     border-style: hidden;
 }
+.boton2 {
+    background-color: aquamarine;
+    width: 100px;
+    height: 40px;
+    border-radius: 15px;
+    border-style: hidden;
+    align-content: space-between;
+}
 .card-title {
     font-weight: bold;
     font-size: 30px;
